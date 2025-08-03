@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | FERRETcoDe</title>
+    <link rel="stylesheet" href="../Estilo/estilo.css">
+</head>
+<body>
+<header>
+    <h1>FERRETcoDe</h1>
+    <nav>
+    <ul>
+        <li><a href="../Inicio/Inicio.html" class="menu-item"><img src="../Imagenes/Iconodeinicio.png" alt="Inicio" class="icono"/>Inicio</a></li>
+
+        <li><a href="../Productos/Producto.html" class="menu-item"><img src="../Imagenes/agregar-producto.png" alt="Productos" class="icono"/>Productos</a></li>
+        <li><a href="../Carrito/Carrito.html" class="menu-item"><img src="../Imagenes/agregar-producto.png" alt="Carrito" class="icono"/>Carrito</a></li>
+        <li><a href="../Contacto/Contacto.html" class="menu-item"><img src="../Imagenes/agenda.png" alt="Contacto" class="icono"/>Contacto</a></li>
+        <li><a href="../Acerca de/Acerca.html" class="menu-item"><img src="../Imagenes/equipo.png" alt="Acerca de" class="icono"/>Acerca de</a></li>
+        
+    </ul>
+    </nav>
+</header>
+
+
+<main class="contenedor">
+<section class="contacto">
+    <h2>📩 Contáctanos</h2>
+    <p class="descripcion">¿Tienes alguna duda o comentario? Llena este formulario y te responderemos pronto.</p>
+
+    <form id="formulario-contacto">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" name="correo" placeholder="Tu correo electrónico" required />
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+    <button type="button" onclick="enviarFormulario()" class="boton-catalogo">Enviar mensaje</button>
+    <p id="respuesta" class="mensaje-envio"></p>
+    </form>
+</section>
+
+<section class="extras-contacto">
+    <h3>📍 Nuestra ubicación (simulada)</h3>
+    <div class="mapa">
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.9022300134256!2d-86.26654372578066!3d12.121095933582107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f7155784e16299f%3A0xd68968a41b3a09ae!2sManagua%2C%20Nicaragua!5e0!3m2!1ses-419!2sni!4v1717029000000"
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    </div>
+
+    <div class="whatsapp">
+    <a  onclick="redirigir()">📱 Si no envianos un whatsapp</a>
+    </div>
+</section>
+</main>
+
+
+
+<script src="../Javascript/main.js"></script>
+
+</body>
+</html>

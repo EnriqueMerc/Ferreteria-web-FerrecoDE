@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | FERRETcoDe</title>
+    <link rel="stylesheet" href="../Estilo/estilo.css">
+</head>
+<body>
+<header>
+    <h1>FERRETcoDe</h1>
+    <nav>
+        <input type="text" id="buscador" placeholder="Buscar productos..."/>
+    <ul>
+        <li><a href="../Inicio/Inicio.html" class="menu-item"><img src="../Imagenes/Iconodeinicio.png" alt="Inicio" class="icono"/>Inicio</a></li>
+
+        <li><a href="../Productos/Producto.html" class="menu-item"><img src="../Imagenes/agregar-producto.png" alt="Productos" class="icono"/>Productos</a></li>
+        <li><a href="../Carrito/Carrito.html" class="menu-item"><span id="contador-carrito">0</span><img src="../Imagenes/agregar-producto.png" alt="Carrito" class="icono"/>Carrito</a></li>
+        <li><a href="../Contacto/Contacto.html" class="menu-item"><img src="../Imagenes/agenda.png" alt="Contacto" class="icono"/>Contacto</a></li>
+        <li><a href="../Acerca de/Acerca.html" class="menu-item"><img src="../Imagenes/equipo.png" alt="Acerca de" class="icono"/>Acerca de</a></li>
+        
+    </ul>
+    </nav>
+</header>
+
+<main style="flex: 1;" class="productos">
+    <h2 style="text-align:center; color:#3A8DFF; font-family:'Comic Sans MS',Arial,sans-serif;">Nuestros Productos</h2>
+    <div class="galeria">
+        <div class="producto">
+            <img src="../Imagenes/TaladroInalambrico.avif" alt="Taladro inalámbrico">
+            <h3>Taladro Eléctrico</h3>
+            <p class="precio">C$ 59.99</p>
+            <button onclick="agregarAlCarrito('TaladroInalambrico', 59.99)">Añadir al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="../Imagenes/Martillo de Acero.jpg" alt="Martillo de Acero">
+            <h3>Martillo de Acero</h3>
+            <p class="precio">C$ 150.00</p>
+            <button onclick="agregarAlCarrito('Martillo De Acero',150.00)">Añadir al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="../Imagenes/Juego de llaves.jpeg" alt="Caja de Herramientas">
+            <h3>Caja de Herramientas</h3>
+            <p class="precio">C$ 500.00</p>
+            <button onclick="agregarAlCarrito('Caja De Herramientas',500.00)">Añadir al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="../Imagenes/Escalera de aluminio.jpg" alt="Escalera de Aluminio">
+            <h3>Escalera de Aluminio</h3>
+            <p class="precio">C$ 1,050</p>
+            <button onclick="agregarAlCarrito('Escalera de Aluminio',1.050)">Añadir al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="../Imagenes/Mecate fibra natural.jpg" alt="Mecate Fibra Natural">
+            <h3>Mecate Fibra Natural</h3>
+            <p class="precio">C$ 50.00</p>
+            <button onclick="agregarAlCarrito('Mecate de fibra',50.00)">Añadir al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="../Imagenes/Alicate.jpg" alt="Alicates Universales">
+            <h3>Alicates Universales</h3>
+            <p class="precio">C$ 35.00</p>
+            <button onclick="agregarAlCarrito('Alicate Universales',35.00)">Añadir al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="../Imagenes/Llave inglesa.jpg" alt="Llave Inglesa Ajustable">
+            <h3>Llave Inglesa Ajustable</h3>
+            <p class="precio">C$ 80.00</p>
+            <button onclick="agregarAlCarrito('Llave Inglesa',80.00)">Añadir al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="../Imagenes/Serrucho.webp" alt="Serrucho Para Madera">
+            <h3>Serrucho Para Madera</h3>
+            <p class="precio">C$ 200.00</p>
+            <button onclick="agregarAlCarrito('Serrucho Para Madera',200.00)">Añadir al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="../Imagenes/Cinta metrica.jpg" alt="Cinta Metrica">
+            <h3>Cinta Metrica</h3>
+            <p class="precio">C$ 25.00</p>
+            <button onclick="agregarAlCarrito('Cinta metrica',25.00)">Añadir al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="../Imagenes/Pistola de calor.avif" alt="Pistola de Calor">
+            <h3>Pistola de Calor</h3>
+            <p class="precio">C$ 600.00</p>
+            <button onclick="agregarAlCarrito('Pistola de calor',600.00)">Añadir al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="../Imagenes/cargador de bateria.jpeg" alt="Cargador de Baterias">
+            <h3>Cargador de Baterias</h3>
+            <p class="precio">C$ 800.00</p>
+            <button onclick="agregarAlCarrito('Cargador de bateria',800.00)">Añadir al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="../Imagenes/Atornillador.webp" alt="Atornillador Electrico">
+            <h3>Atornillador Electrico</h3>
+            <p class="precio">C$ 100.00</p>
+            <button onclick="agregarAlCarrito('Atornillador Electrico',100.00)">Añadir al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="../Imagenes/multimetro_1.jpg" alt="Multimetro digital">
+            <h3>Multimetro digital</h3>
+            <p class="precio">C$ 300.00</p>
+            <button onclick="agregarAlCarrito('Multimetro digital',300.00)">Añadir al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="../Imagenes/Cinta aislnate.avif" alt="Cinta Aislante">
+            <h3>Cinta Aislante</h3>
+            <p class="precio">C$ 40.00</p>
+            <button onclick="agregarAlCarrito('Cinta aislnate',40.00)">Añadir al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="../Imagenes/Guantes.webp" alt="Guantes de Trabajo">
+            <h3>Guantes de Trabajo</h3>
+            <p class="precio">C$ 150.00</p>
+            <button onclick="agregarAlCarrito('Guantes de Trabajo',150.00)">Añadir al carrito</button>
+        </div>
+    </div>
+</main>
+
+<footer class="footer-D">
+    <div class="footer-contenido">
+        <h3>🔧 FERRETcoDe</h3>
+        <p>Comprometidos con la calidad y el servicio desde 2025.</p>
+
+        <div class="footer-enlaces">
+            <a href="../Contacto/Contacto.html">Contacto</a>
+            <span>|</span>
+            <a href="../Acerca de/Acerca.html">Acerca de</a>
+            <span>|</span>
+            <a href="../Productos/Producto.html">Productos</a>
+        </div>
+
+        <div class="footer-info">
+            <p>📍 Managua, Nicaragua</p>
+            <p>📞 +505 8888 8888 | ✉️ FERRETcoDe2025@correo.com</p>
+        </div>
+
+        <p class="footer-copy">&copy; 2025 FERRETcoDe. Todos los derechos reservados.</p>
+    </div>
+</footer>
+<script src="../Javascript/main.js"></script>
+</body>
+</html>
