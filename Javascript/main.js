@@ -138,7 +138,7 @@ function confirmarPago() {
 
     let total = carrito.reduce((sum, item) => sum + item.precio, 0);
     let metodoTexto = metodo === "tarjeta" ? "Tarjeta" :
-                      metodo === "transferencia" ? "Transferencia" : "Efectivo";
+    metodo === "transferencia" ? "Transferencia" : "Efectivo";
 
     mostrarPopup(`✅ Compra realizada con ${metodoTexto}. Total: C$ ${total.toFixed(2)}`);
 
