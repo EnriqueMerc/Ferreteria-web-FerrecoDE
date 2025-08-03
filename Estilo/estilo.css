@@ -90,7 +90,7 @@ padding: 20px;
 
 /* Sección destacados */
 .destacados {
-background-color: #fff;
+background-color: #4CD964;
 padding: 20px;
 border-radius: 5px;
 }
@@ -220,6 +220,7 @@ margin-bottom: 10px;
 /* Nuevas secciones de promociones */
 .promociones-destacadas {
     display: flex;
+    background-color: #FF3B3F;
     gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
@@ -879,8 +880,11 @@ background-color: #218838;
 
 .miembro {
     background-color: #f9d616;
+    color: #cc2d30;
     padding: 20px;
-    border-radius: 12px;
+    border-radius: 50px;
+    border: #0a3c6e 2px solid;
+    display: flex;
     text-align: center;
     font-weight: bold;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
